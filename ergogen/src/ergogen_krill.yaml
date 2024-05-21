@@ -5,18 +5,49 @@ units:
   # Spacing/Padding Values
   px: cx
   py: cy
+  # Preview Outline Values
+  $default_height: 16.45
+  $default_width: 17.44
+
 
 points:
   zones:
     fingers:
+      anchor:
+        rotate: 5
+      key:
+        padding: py
+        spread: px + 1
       columns:
-        outer:
-        ring:
-        middle:
-        index:
-        inner:
+        pinky:
+        ring.key:
+          splay: -3
+          stagger: 11
+        middle.key:
+          splay: -2
+          stagger: 4
+        index.key:
+          splay: -2
+          spread: px
+          stagger: -5
+        inner.key:
+          spread: px
+          stagger: -2
       rows:
         bottom:
         home:
         top:
-        
+    thumbs:
+      anchor:
+        ref: fingers_index_bottom
+        shift: [0.6px, -(py+4)]
+        rotate: -10
+      key:
+        padding: py
+        spread: px
+      columns:
+        tucky:
+        reachy.key:
+          rotate: -8
+          shift: [0, -0.5]
+          spread: px + 3
