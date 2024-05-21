@@ -1,0 +1,22 @@
+units:
+  # KeyCap Dimensional Values
+  kx: 17.44
+  ky: 16.45
+  # Spacing/Padding Values
+  px: cx
+  py: cy
+
+points:
+  zones:
+    fingers:
+      columns:
+        outer:
+        ring:
+        middle:
+        index:
+        inner:
+      rows:
+        bottom:
+        home:
+        top:
+        
