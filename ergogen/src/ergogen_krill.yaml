@@ -13,8 +13,7 @@ units:
 points:
   zones:
     fingers:
-      anchor:
-        rotate: 5
+      rotate: 5
       key:
         padding: py
         spread: px + 1
@@ -40,7 +39,7 @@ points:
     thumbs:
       anchor:
         ref: fingers_index_bottom
-        shift: [0.6px, -(py+4)]
+        shift: [0.7px, -(py+4)]
         rotate: -10
       key:
         padding: py
