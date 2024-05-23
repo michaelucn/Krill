@@ -9,7 +9,6 @@ units:
   $default_height: 16.45
   $default_width: 17.44
 
-
 points:
   zones:
     fingers:
@@ -17,14 +16,16 @@ points:
       key:
         padding: py
         spread: px + 1
+        bind: 0
       columns:
-        pinky:
+        pinky.key.bind: [0, 0.7, 0, 0]
         ring.key:
           splay: -3
           stagger: 11
         middle.key:
           splay: -2
           stagger: 4
+          bind: [0.4, 0]
         index.key:
           splay: -2
           spread: px
@@ -45,8 +46,17 @@ points:
         padding: py
         spread: px
       columns:
-        tucky:
+        tucky.key.bind: [3, 0, 2, 50]
         reachy.key:
+          bind: [2, 0, 3, 2]
           rotate: -8
           shift: [0, -0.5]
-          spread: px + 3
+          spread: px + 2
+
+outlines:
+  board:
+  - what: rectangle
+    where: true
+    size: [px+2, py+2]
+    bound: true
+
