@@ -24,12 +24,12 @@ points:
           stagger: 11
         middle.key:
           splay: -2
-          stagger: 4
+          stagger: 8
           bind: [0.4, 0]
         index.key:
           splay: -2
           spread: px
-          stagger: -5
+          stagger: -12
         inner.key:
           spread: px
           stagger: -2
